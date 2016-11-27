@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 var element = document.getElementById('phrase');
 
-element.innerHTML = 'Jesus is God';
+element.innerHTML = 'God is Love';
 
 var img = document.getElementById('image1');
 
