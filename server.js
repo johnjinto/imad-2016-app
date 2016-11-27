@@ -84,6 +84,7 @@ function createTemplate (data){
             <div>
               ${content}
             </div>
+            
         </div>    
     </body>
 </html>
@@ -101,7 +102,7 @@ app.get('/:articleName', function (req, res) {
 //app.get('/1', function (req, res) {
     var articleName = req.params.articleName;
   res.send(createTemplate(articleone));
-  res.send(console.log(articleName));
+  res.send(console.log('consolelogsuccess'));
   
 });
 
