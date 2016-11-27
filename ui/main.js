@@ -3,7 +3,6 @@ console.log('Loaded!');
 var element = document.getElementById('phrase');
 
 element.innerHTML = 'God is Love';
-
 var img = document.getElementById('image1');
 
 var marginLeft = 0;
