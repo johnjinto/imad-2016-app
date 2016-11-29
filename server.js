@@ -6,7 +6,6 @@ var app = express();
 app.use(morgan('combined'));
 //var articles ={
     
-console.log(articleName);
 var articleone = {
     
     title: 'article-one',
