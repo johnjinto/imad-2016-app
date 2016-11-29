@@ -6,8 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 //var articles ={
     
-    confirm("testing");
-      console.log(articleName);
+console.log(articleName);
 var articleone = {
     
     title: 'article-one',
@@ -105,7 +104,6 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res) {
 //app.get('/1', function (req, res) {
     var articleName = req.params.articleName;
-    alert("testing");
       console.log(articleName);
   res.send(createTemplate(articleone));
 
