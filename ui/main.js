@@ -10,23 +10,23 @@ var topinc = parseInt(img.style.top, 10);
 var leftinc = parseInt(img.style.left, 10);
 
 flydwn.onclick = function(){	
-topinc = topinc+5;
+topinc = topinc+10;
 img.style.top = topinc + 'px';
 }
 
 flyup.onclick = function(){	
-topinc = topinc-5;
+topinc = topinc-10;
 img.style.top = topinc + 'px';
 }
 
 flyryt.onclick = function(){	
-leftinc = leftinc+5;
+leftinc = leftinc+10;
 img.style.left = leftinc + 'px';
 
 }
 
 flyleft.onclick = function(){	
-leftinc = leftinc-5;
+leftinc = leftinc-10;
 img.style.left = leftinc + 'px';
 
 }
