@@ -1,25 +1,61 @@
 <!doctype html>
 <html>
     <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
+<style>
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 200px;
+}
+
+    .container{
+    max-width: 900px;
+    margin: 0 auto;
+    color: #483838;
+    font-family: sans-serif;
+    padding-left: 20;
+    padding-right: 20;
+}
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>    
     <body>
-         <div>
-            <a href="/articleone">Article-one</a>
-        </div>
-        <div>
-            <a href="/article-two">Article-two</a>
-        </div>
-        <div>
-            <a href="/article-three">Article-three</a>
-        </div>
-        <div id='image1' class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
+    
+      <h3>
+    Gloria...Gloria...
+    </h3>        
+     <div>   
+
+        <img id = 'angel' src="/ui/angel.png" style="position: relative; left: 10px; top:10px; right: 100; bottom:100 "/>
+        
         <br>
-        <div id = 'phrase' class="center text-big bold">
-            Hi! I am Jinto. I love Jesus
+    </div>    
+        <div id = 'phrase' font-size: 300%; style="position:fixed; width:100%; height:70px; padding:5px; bottom:50px" ><b>
+            Vox de Pacis
+        </b></div>
+<hr/>
+        <div id = 'control panel' style="position:fixed; width:100%; height:70px; background-color:yellow; padding:5px; bottom:0px;">
+            
+            <button id="leftbutton"> LEFT</button>
+            <button id="rightbutton"> RIGHT</button>
+            <button id="upbutton"> UP</button>
+            <button id="downbutton">DOWN</button>
+
         </div>
+
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>

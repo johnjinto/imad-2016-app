@@ -1,20 +1,32 @@
-console.log('Loaded!');
+var img = document.getElementById('angel');
 
-var element = document.getElementById('phrase');
+var flydwn = document.getElementById('downbutton');
+var flyup = document.getElementById('upbutton');
+var flyryt = document.getElementById('rightbutton');
+var flyleft = document.getElementById('leftbutton');
 
-element.innerHTML = 'God is Love';
-var img = document.getElementById('image1');
 
-var marginLeft = 0;
-function moveRight(){ 
+var topinc = parseInt(img.style.top, 10);
+var leftinc = parseInt(img.style.left, 10);
 
-marginLeft = marginLeft+10;
-image1.style.marginLeft = marginLeft + 'px';
+flydwn.onclick = function(){	
+topinc = topinc+5;
+img.style.top = topinc + 'px';
+}
 
-};
+flyup.onclick = function(){	
+topinc = topinc-5;
+img.style.top = topinc + 'px';
+}
 
-img.onclick = function (){
+flyryt.onclick = function(){	
+leftinc = leftinc+5;
+img.style.left = leftinc + 'px';
 
-var interval = setInterval(moveRight, 100); 
+}
 
-};
+flyleft.onclick = function(){	
+leftinc = leftinc-5;
+img.style.left = leftinc + 'px';
+
+}

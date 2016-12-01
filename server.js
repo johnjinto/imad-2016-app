@@ -101,10 +101,14 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
-//app.get('/1', function (req, res) {
     var articleName = req.params.articleName;
-      console.log(articleName);
-  res.send(createTemplate(articleone));
+     
+   console.log(articleName);
+   console.log(typeof(articleName));
+  //res.send(createTemplate(articleone));
+  res.send(createTemplate(articleName));
+
+
 
 });
 
