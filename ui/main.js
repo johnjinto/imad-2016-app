@@ -9,37 +9,60 @@ var element = document.getElementById('santaspeak');
 var topinc = parseInt(img.style.top, 10);
 var leftinc = parseInt(img.style.left, 10);
 
+//FUNCTIONS TO BE WRITTEN TO AVOID REPEATING THE FOLLOWING 4 CODE BLOCKS!!
 
-flydwn.onclick = function(){	
-topinc = topinc+10;
-img.style.top = topinc + 'px';
-thanks();
+flydwn.onmousedown = function(){	
+		var stopLoop = setInterval(function(){ 
+		topinc = topinc+10;
+		img.style.top = topinc + 'px';
+		thanks();
+		}, 150);
+	this.onmouseup =function(){
+	clearInterval(stopLoop);
+	}
 }
 
-flyup.onclick = function(){	
-topinc = topinc-10;
-img.style.top = topinc + 'px';
-thanks();
+
+flyup.onmousedown = function(){	
+		var stopLoop = setInterval(function(){ 
+		topinc = topinc-10;
+		img.style.top = topinc + 'px';
+		thanks();
+		}, 150);
+	this.onmouseup =function(){
+	clearInterval(stopLoop);
+	}
 }
 
-flyryt.onclick = function(){	
-leftinc = leftinc+10;
-img.style.left = leftinc + 'px';
-thanks();
+flyryt.onmousedown = function(){	
+		var stopLoop = setInterval(function(){ 
+		leftinc = leftinc+10;
+		img.style.left = leftinc + 'px';
+		thanks();
+		}, 150);
+	this.onmouseup =function(){
+	clearInterval(stopLoop);
+	}
 }
 
-flyleft.onclick = function(){	
-leftinc = leftinc-10;
-img.style.left = leftinc + 'px';
-thanks();
+flyleft.onmousedown = function(){	
+		var stopLoop = setInterval(function(){ 
+		leftinc = leftinc-10;
+		img.style.left = leftinc + 'px';
+		thanks();
+		}, 150);
+	this.onmouseup =function(){
+	clearInterval(stopLoop);
+	}
 }
+
 
 var thanks = function(){
+
 console.log(topinc);
 console.log(leftinc);
-
-
-if(topinc===-280&&leftinc===450)
+//if(topinc===-280&&leftinc===450)
+if((topinc<-260&&topinc>-300)&&(leftinc>430&&leftinc<470))
 {
 element.innerHTML = 'OH...THANK YOU..GOD BLESS YOU DEAR';
 }
@@ -50,5 +73,5 @@ element.innerHTML = 'OH...NOT YET THERE..';
 }
 
 // leftinc=450
-//topinc =-290
+//topinc =-280
 }
