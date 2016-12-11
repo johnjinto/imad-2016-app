@@ -62,7 +62,7 @@ var thanks = function(){
 console.log(topinc);
 console.log(leftinc);
 //if(topinc===-280&&leftinc===450)
-if((topinc<-260&&topinc>-300)&&(leftinc>430&&leftinc<470))
+if((topinc<-260&&topinc>-300)&&(leftinc>330&&leftinc<360))
 {
 element.innerHTML = 'OH...THANK YOU..GOD BLESS YOU DEAR';
 }
@@ -72,6 +72,6 @@ else
 element.innerHTML = 'OH...NOT YET THERE..';
 }
 
-// leftinc=450
+// leftinc=350
 //topinc =-280
 }
